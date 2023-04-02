@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/raleway800.woff2") format("woff2");
+  src: url("../fonts/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -62,20 +62,24 @@ body {
 }
 
 .header {
-  
+
 }
 
 .logo-header {
   width: 145px;
 }
 
+.logo-container {
+  width: 100%;
+  min-height: 40px;
+}
 .logo {
-  
+
   position: absolute;
 }
 .navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -95,4 +99,158 @@ body {
 .navigation-list {
   display: flex;
   flex-direction: row;
+  list-style-type: none;
+}
+
+
+
+.main-index {
+  width: 1160px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-image {
+ display: block;
+}
+
+.slider-number {
+  display: flex;
+  position: absolute;
+  transform: translate(1000px, 10px);
+  font-style: "Rubik";
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+}
+
+.slider-about-product {
+  margin-left: 60px;
+  margin-top: 120px;
+}
+
+.slider-feature-list {
+  display: flex;
+  padding: 0;
+}
+
+
+.slider-button {
+  width: 48px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slider-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-button:hover {
+  background-color: #814b18;
+}
+
+.slider-button:focus {
+  outline: 2px solid #dbb590;
+  background-color: #4e2e0e;
+}
+.slider-next {
+  transform: rotate(180deg);
+}
+
+.indicator-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.indicator-item {
+  margin: 0 4px;
+}
+
+.indicator-button {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator-button:hover {
+  background-color: #af7842;
+}
+
+.indicator-button:focus {
+  background-color: #dbb590;
+  outline: none;
+}
+
+.indicator-button-current {
+  background-color: #242424;
+}
+
+.category-catalog {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-description {
+  list-style-type: none;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-index {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-logo-container {
+  position: relative;
 }
